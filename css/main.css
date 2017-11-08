@@ -1,0 +1,127 @@
+
+
+.container {
+  border: 1px solid black;
+  height: 400px;
+  width: 800px;
+  margin: 200px auto;
+  /*background-color: #888888*/
+}
+
+.keyboard {
+  border: 1px solid black;
+  height: 300px;
+  width: 700px;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#one {
+  position: absolute;
+  left: 0px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+}
+#two{
+  position: absolute;
+  left: 100px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+}
+#three {
+  position: absolute;
+  left: 200px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+}
+#four {
+  position: absolute;
+  left: 300px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+}
+#five {
+  position: absolute;
+  left: 400px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+}
+#six {
+  position: absolute;
+  left: 500px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+}
+#seven {
+  position: absolute;
+  left: 600px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+#eight {
+  position: absolute;
+  left: 60px;
+  width: 55px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: black;
+  z-index: 10;
+  box-shadow: 2px 2px 1px #888888;
+}
+#nine {
+  position: absolute;
+  left: 160px;
+  width: 55px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: black;
+  z-index: 10;
+  box-shadow: 2px 2px 1px #888888;
+}
+
+#ten {
+  position: absolute;
+  left: 360px;
+  width: 55px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: black;
+  z-index: 10;
+  box-shadow: 2px 2px 1px #888888;
+}
+#eleven {
+  position: absolute;
+  left: 472px;
+  width: 55px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: black;
+  z-index: 10;
+  box-shadow: 2px 2px 1px #888888;
+}
+#twelve {
+  position: absolute;
+  right: 60px;
+  width: 55px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: black;
+  z-index: 10;
+  box-shadow: 2px 2px 1px #888888;
+}
