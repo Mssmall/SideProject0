@@ -4,25 +4,12 @@
 // length of audio file = .duration
 // timeupdate to update current time whenever audio .currentTime changes
 
-// let song = $('audio')
-//
-// let song1 = $('#fool')
-// console.log(song1);
-// let song2 = document.getElementById('fool')
-// console.log(song2);
-
-// const playSound = function (file) {
-  // let audFool = new Audio(file);
-  // audFool.play();
-// }
-
 $(document).ready(function () {
   //////TRACKONE
   $('#one').on('click', function() {
     $('#fool').get(0).play();
     const file = $('#fool').attr('src');
     const track = file.split('/').pop().split('.')[0];
-    // console.log( track );
     $('.trackName').html( track );
   });
   $('#eight').on('click', function() {
@@ -44,49 +31,49 @@ $(document).ready(function () {
     $('#youaremyworld').get(0).play();
     const file = $('#youaremyworld').attr('src');
     const track = file.split('/').pop().split('.')[0];
-    // console.log( track );
+    $('.trackName').html( track );
   });
   $('#nine').on('click', function() {
     $('#youaremyworld').get(0).pause();
   ///////TRACKFOUR
-  });$('#two').on('click', function() {
-    $('#ifonly').get(0).play();
-    const file = $('#ifonly').attr('src');
+});$('#four').on('click', function() {
+    $('#windflower').get(0).play();
+    const file = $('#windflower').attr('src');
     const track = file.split('/').pop().split('.')[0];
-    // console.log( track );
+    $('.trackName').html( track );
   });
-  $('#nine').on('click', function() {
-    $('#ifonly').get(0).pause();
+  $('#ten').on('click', function() {
+    $('#windflower').get(0).pause();
   ///////TRACKFIVE
-  });$('#two').on('click', function() {
-    $('#ifonly').get(0).play();
-    const file = $('#ifonly').attr('src');
+});$('#five').on('click', function() {
+    $('#somewheresomeday').get(0).play();
+    const file = $('#somewheresomeday').attr('src');
     const track = file.split('/').pop().split('.')[0];
-    // console.log( track );
+    $('.trackName').html( track );
   });
-  $('#nine').on('click', function() {
-    $('#ifonly').get(0).pause();
+  $('#eleven').on('click', function() {
+    $('#somewheresomeday').get(0).pause();
   ///////TRACKSIX
-  });$('#two').on('click', function() {
-    $('#ifonly').get(0).play();
-    const file = $('#ifonly').attr('src');
+});$('#six').on('click', function() {
+    $('#mydestiny').get(0).play();
+    const file = $('#mydestiny').attr('src');
     const track = file.split('/').pop().split('.')[0];
-    // console.log( track );
+    $('.trackName').html( track );
   });
-  $('#nine').on('click', function() {
-    $('#ifonly').get(0).pause();
+  $('#twelve').on('click', function() {
+    $('#mydestiny').get(0).pause();
   ///////TRACKSEVEN
-  });$('#two').on('click', function() {
-    $('#ifonly').get(0).play();
-    const file = $('#ifonly').attr('src');
+});$('#seven').on('click', function() {
+    $('#everymoment').get(0).play();
+    const file = $('#everymoment').attr('src');
     const track = file.split('/').pop().split('.')[0];
-    // console.log( track );
+    $('.trackName').html( track );
   });
-  $('#nine').on('click', function() {
-    $('#ifonly').get(0).pause();
+  $('#twelve').on('click', function() {
+    $('#everymoment').get(0).pause();
   });
   ////// RESTART FUNCTION
-  $('.restart').on('click', function() {
+  $('button').on('click', function() {
     const audio = $('audio');
     for (let i = 0; i < audio.length; i++) {
       audio.get(i).currentTime = 0;
@@ -97,7 +84,34 @@ $(document).ready(function () {
 
 });
 
+  ////// TIMER FUNCTION
+  // $('.timer').on('timeupdate', function () {
+  //   const audio = $('audio');
+  //   for (var i = 0; i < audio.length; i++) {
+  //   $('.timer').html( "current second: " + audio.get(i).currentTime);
+  //   };
+  // });
 
-// $.each($('audio'), function () {
-//   $(this).stop();
-// });
+//   const audio = $('#fool');
+//   console.log(audio);
+//   $('audio').on('timeupdate', function () {
+//     let progress = $('.timer');
+//     let value = 0;
+//     if (audio.duration === 'Infinity') {
+//       value = 100;
+//     } else if (audio.currentTime > 0) {
+//       value = Math.floor((100 / audio.duration) * $('#fool').get(0)currentTime);
+//       timer.stop().animate({'width':value + '%'},500);
+//     };
+//   });
+//
+//   const formatTime = function(time) { //Change time format
+//    let minutes = Math.floor(time / 60);
+//    minutes = (minutes >= 10) ? minutes : "" + minutes;
+//    let seconds = Math.floor(time % 60);
+//    seconds = (time >= 10) ? seconds : "0" + seconds;
+//    return minutes + ":" + seconds;
+// };
+//
+// $('.timer #time').html(formatTime($('#fool').currentTime)); //Set the new timestamp
+// $('.timer #total-time').html(formatTime($('#fool').duration)); //Set total timestamp
