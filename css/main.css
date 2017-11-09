@@ -1,11 +1,14 @@
-
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: rgb(8, 17, 151);
+  text-align: center;
+}
 
 .container {
   /*border: 1px solid black;*/
   height: 500px;
   width: 800px;
   margin: 200px auto;
-  /*background-color: #888888*/
 }
 
 .keyboard {

@@ -7,6 +7,7 @@
 $(document).ready(function () {
   //////TRACKONE
   $('#one').on('click', function() {
+    $('#one').css('background-color', '#ccf2ff');
     $('#fool').get(0).play();
     const file = $('#fool').attr('src');
     const track = file.split('/').pop().split('.')[0];
@@ -17,10 +18,10 @@ $(document).ready(function () {
   });
   //////TRACKTWO
   $('#two').on('click', function() {
+    $('#two').css('background-color', '#ccf2ff');
     $('#ifonly').get(0).play();
     const file = $('#ifonly').attr('src');
     const track = file.split('/').pop().split('.')[0];
-    console.log( track );
     $('.trackName').html( track );
   });
   $('#nine').on('click', function() {
@@ -28,6 +29,7 @@ $(document).ready(function () {
   });
   //////TRACKTHREE
   $('#three').on('click', function() {
+    $('#three').css('background-color', '#ccf2ff');
     $('#youaremyworld').get(0).play();
     const file = $('#youaremyworld').attr('src');
     const track = file.split('/').pop().split('.')[0];
@@ -37,6 +39,7 @@ $(document).ready(function () {
     $('#youaremyworld').get(0).pause();
   ///////TRACKFOUR
 });$('#four').on('click', function() {
+  $('#four').css('background-color', '#ccf2ff');
     $('#windflower').get(0).play();
     const file = $('#windflower').attr('src');
     const track = file.split('/').pop().split('.')[0];
@@ -46,6 +49,7 @@ $(document).ready(function () {
     $('#windflower').get(0).pause();
   ///////TRACKFIVE
 });$('#five').on('click', function() {
+  $('#five').css('background-color', '#ccf2ff');
     $('#somewheresomeday').get(0).play();
     const file = $('#somewheresomeday').attr('src');
     const track = file.split('/').pop().split('.')[0];
@@ -55,6 +59,7 @@ $(document).ready(function () {
     $('#somewheresomeday').get(0).pause();
   ///////TRACKSIX
 });$('#six').on('click', function() {
+  $('#six').css('background-color', '#ccf2ff');
     $('#mydestiny').get(0).play();
     const file = $('#mydestiny').attr('src');
     const track = file.split('/').pop().split('.')[0];
@@ -64,6 +69,7 @@ $(document).ready(function () {
     $('#mydestiny').get(0).pause();
   ///////TRACKSEVEN
 });$('#seven').on('click', function() {
+  $('#seven').css('background-color', '#ccf2ff');
     $('#everymoment').get(0).play();
     const file = $('#everymoment').attr('src');
     const track = file.split('/').pop().split('.')[0];
