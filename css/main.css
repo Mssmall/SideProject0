@@ -35,6 +35,17 @@
   position: relative;
 }
 
+.trackName {
+  border: 1px solid black;
+  height: 50px;
+  width: 150px;
+  left: 600px;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: #660066;
+}
+
 #one {
   position: absolute;
   left: 0px;
