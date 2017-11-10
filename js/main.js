@@ -7,14 +7,14 @@
 $(document).ready(function () {
   //////TRACKONE
   $('#one').on('click', function() {
-    $('#one').css('background-color', '#ccf2ff');
-    $('#fool').get(0).play();
-    const file = $('#fool').attr('src');
-    const track = file.split('/').pop().split('.')[0];
-    $('.trackName').html( track );
+    $('#one').css('background-color', '#ccf2ff'); //changes colour of key when specified song is played
+    $('#fool').get(0).play(); //gets audio track and plays wnen specific white key is clicked
+    const file = $('#fool').attr('src'); // gets src of audio
+    const track = file.split('/').pop().split('.')[0]; //obtains just the track name from src
+    $('.trackName').html( track ); //displays track name in browser
   });
   $('#eight').on('click', function() {
-    $('#fool').get(0).pause();
+    $('#fool').get(0).pause(); // pauses audio track when corresponding black key is clicked
   });
   //////TRACKTWO
   $('#two').on('click', function() {
@@ -82,42 +82,21 @@ $(document).ready(function () {
   $('button').on('click', function() {
     const audio = $('audio');
     for (let i = 0; i < audio.length; i++) {
-      audio.get(i).currentTime = 0;
+      audio.get(i).currentTime = 0; //restarts audio
     };
-
+  });
+  ////// TIME FUNCTION
+  $('audio').on('timeupdate', function () {
+    $('#time').html(formatTime(this.currentTime)); //Set current timestamp
+    $('#total-time').html(formatTime(this.duration)); //Set total timestamp
   });
 
+  const formatTime = function(time) { //Change time format
+   let minutes = Math.floor(time / 60); //time is in seconds, convert to minutes
+   minutes = (minutes >= 10) ? minutes : "" + minutes; //ternary
+   let seconds = Math.floor(time % 60);
+   seconds = (time >= 10) ? seconds : "0" + seconds;
+   return minutes + ":" + seconds;
+};
 
 });
-
-  ////// TIMER FUNCTION
-  // $('.timer').on('timeupdate', function () {
-  //   const audio = $('audio');
-  //   for (var i = 0; i < audio.length; i++) {
-  //   $('.timer').html( "current second: " + audio.get(i).currentTime);
-  //   };
-  // });
-
-//   const audio = $('#fool');
-//   console.log(audio);
-//   $('audio').on('timeupdate', function () {
-//     let progress = $('.timer');
-//     let value = 0;
-//     if (audio.duration === 'Infinity') {
-//       value = 100;
-//     } else if (audio.currentTime > 0) {
-//       value = Math.floor((100 / audio.duration) * $('#fool').get(0)currentTime);
-//       timer.stop().animate({'width':value + '%'},500);
-//     };
-//   });
-//
-//   const formatTime = function(time) { //Change time format
-//    let minutes = Math.floor(time / 60);
-//    minutes = (minutes >= 10) ? minutes : "" + minutes;
-//    let seconds = Math.floor(time % 60);
-//    seconds = (time >= 10) ? seconds : "0" + seconds;
-//    return minutes + ":" + seconds;
-// };
-//
-// $('.timer #time').html(formatTime($('#fool').currentTime)); //Set the new timestamp
-// $('.timer #total-time').html(formatTime($('#fool').duration)); //Set total timestamp

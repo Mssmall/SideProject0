@@ -20,24 +20,6 @@ h1 {
   box-shadow: 10px 10px 5px #888888;
 }
 
-/*.timer {
-  border: 1px solid black;
-  height: 30px;
-  width: 160px;
-  /*margin: 20px auto;*/
-  /*left: 200px;
-  position: relative;
-}*/
-
-/*.restart {
-  border: 1px solid black;
-  height: 30px;
-  width: 60px;
-  /*margin: 20px auto;*/
-  /*left: 400px;
-  position: relative;
-}*/
-
 button {
   border: 1px solid black;
   position: relative;
@@ -75,14 +57,30 @@ button {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-/*.play-bar {
- height: 35px;
- float: left;
- margin-right: 30px;
- display: flex;
- justify-content: flex-start;
- flex: 1; // This makes the play bar the element that changes size responsively
-}*/
+.pedal2 {
+  border: 1px solid black;
+  position: relative;
+  height: 27px;
+  width: 7px;
+  left: 650px;
+  top: -158px;
+  background: black;
+  /*box-shadow: 1px 1px 1px #888888;*/
+}
+
+#time, #total-time {
+  position: relative;
+  left: 610px;
+  top: -158px;
+  color: rgb(8, 17, 151);
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 5px;
+  /*border: 1px solid black;
+  box-shadow: 1px 1px 1px #888888;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1px;*/
+}
 
 #one {
   position: absolute;
@@ -192,3 +190,30 @@ button {
   z-index: 10;
   box-shadow: 2px 2px 1px #888888;
 }
+
+/*.play-bar {
+ height: 35px;
+ float: left;
+ margin-right: 30px;
+ display: flex;
+ justify-content: flex-start;
+ flex: 1; // This makes the play bar the element that changes size responsively
+}*/
+
+/*.timer {
+  border: 1px solid black;
+  height: 30px;
+  width: 160px;
+  /*margin: 20px auto;*/
+  /*left: 200px;
+  position: relative;
+}*/
+
+/*.restart {
+  border: 1px solid black;
+  height: 30px;
+  width: 60px;
+  /*margin: 20px auto;*/
+  /*left: 400px;
+  position: relative;
+}*/
