@@ -89,6 +89,11 @@ $(document).ready(function () {
   $('audio').on('timeupdate', function () {
     $('#time').html(formatTime(this.currentTime)); //Set current timestamp
     $('#total-time').html(formatTime(this.duration)); //Set total timestamp
+    let keys = $('.keys');
+      if (this.currentTime === this.duration) { //turns key back to white when song finishes playing
+        keys.css('background-color', 'white');
+      };
+
   });
 
   const formatTime = function(time) { //Change time format

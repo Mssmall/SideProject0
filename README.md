@@ -1,5 +1,6 @@
 
-Aware that coloured blue keys do not disappear if particular song stops playing. (do this in time function)
+Aware that coloured blue keys do not disappear if particular song stops playing.
+    ->> update: changes keys to white when song finishes playing
 
 
 What to implement next?
