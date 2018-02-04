@@ -1,10 +1,16 @@
+#Readme
 
+SUMMARY
+Inspired by my love for Korean drama and the soundtracks, I built a music player which plays music from two Korean drama tv shows: 'My Love From the Star' and 'Legend of the Blue Sea'. Unfortunately, the songs can only be played on my computer as they have been bought from the iTunes Store, and as such, cannot be used for anything other than for personal use.
+
+There are two time trackers: one to display the live current time of the song and the other displays the overall duration of the song.
+
+IMPROVEMENTS AND KNOWN BUGS
 Aware that coloured blue keys do not disappear if particular song stops playing.
     ->> update: changes keys to white when song finishes playing
 
 
-What to implement next?
-
+FUTURE FEATURES
 Would like to add volume, as well as a progress bar.
 Ability to repeat, rewind and fast forward
 Would also like to add a song counter - # of times a song is played.
