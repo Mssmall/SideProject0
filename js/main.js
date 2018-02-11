@@ -78,6 +78,7 @@ $(document).ready(function () {
   $('#twelve').on('click', function() {
     $('#everymoment').get(0).pause();
   });
+
   ////// RESTART FUNCTION
   $('button').on('click', function() {
     const audio = $('audio');
@@ -93,7 +94,6 @@ $(document).ready(function () {
       if (this.currentTime === this.duration) { //turns key back to white when song finishes playing
         keys.css('background-color', 'white');
       };
-
   });
 
   const formatTime = function(time) { //Change time format
@@ -102,6 +102,6 @@ $(document).ready(function () {
    let seconds = Math.floor(time % 60);
    seconds = (time >= 10) ? seconds : "0" + seconds;
    return minutes + ":" + seconds;
-};
+  };
 
 });
