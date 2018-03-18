@@ -67,6 +67,7 @@ $(document).ready(function () {
   });
   $('#twelve').on('click', function() {
     $('#mydestiny').get(0).pause();
+    // $('#six').css('background-color', 'white');
   ///////TRACKSEVEN
 });$('#seven').on('click', function() {
   $('#seven').css('background-color', '#ccf2ff');
@@ -79,8 +80,27 @@ $(document).ready(function () {
     $('#everymoment').get(0).pause();
   });
 
+//////// stops two songs from playing at same time
+    document.addEventListener('play', function(e){
+      var audios = document.getElementsByTagName('audio');
+      for (var i = 0, len = audios.length; i < len; i++){
+        if (audios[i] != e.target) {
+            audios[i].pause();
+        }
+
+      }
+    }, true);
+
+
+      // if !(currentTime = 0) {
+      //   $('#keys').css('background-color', '#ccf2ff');
+      // } else {
+      //   $('#key').css('background-color', 'white');
+      //
+      // }
+
   ////// RESTART FUNCTION
-  $('button').on('click', function() {
+  $('.restart').on('click', function() {
     const audio = $('audio');
     for (let i = 0; i < audio.length; i++) {
       audio.get(i).currentTime = 0; //restarts audio

@@ -20,29 +20,6 @@ h1 {
   box-shadow: 10px 10px 5px #888888;
 }
 
-button {
-  border: 1px solid black;
-  position: relative;
-  margin: 20px auto;
-  font-size: 13px;
-  color: rgb(8, 17, 151);
-  left: 501px;
-  background: none;
-  box-shadow: 2px 2px 1px #888888;
-  font-family: 'Gloria Hallelujah', cursive;
-}
-
-.pedal {
-  border: 1px solid black;
-  position: relative;
-  height: 27px;
-  width: 7px;
-  left: 529px;
-  top: -129px;
-  background: black;
-  /*box-shadow: 1px 1px 1px #888888;*/
-}
-
 .trackName {
   /*border: 1px solid black;
   box-shadow: 1px 1px 1px #888888;*/
@@ -57,21 +34,54 @@ button {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-.pedal2 {
+button {
+  border: 1px solid black;
+  position: relative;
+  margin: 20px auto;
+  font-size: 13px;
+  color: rgb(8, 17, 151);
+  left: 501px;
+  background: none;
+  box-shadow: 2px 2px 1px #888888;
+  font-family: 'Gloria Hallelujah', cursive;
+  line-spacing: 10px;
+}
+
+.pedal, .pedal2 {
   border: 1px solid black;
   position: relative;
   height: 27px;
   width: 7px;
-  left: 650px;
+  background: black;
+}
+
+.pedal {
+  left: 529px;
+  top: -129px;
+}
+
+.pedal2 {
+  left: 579px;
   top: -158px;
+}
+
+.pedal3 {
+  border: 1px solid black;
+  position: relative;
+  height: 27px;
+  width: 7px;
+  left: 678px;
+  top: -186px;
   background: black;
   /*box-shadow: 1px 1px 1px #888888;*/
 }
 
+
+
 #time, #total-time {
   position: relative;
-  left: 610px;
-  top: -158px;
+  left: 638px;
+  top: -191px;
   color: rgb(8, 17, 151);
   font-family: 'Gloria Hallelujah', cursive;
   margin: 5px;
@@ -82,7 +92,7 @@ button {
   padding: 1px;*/
 }
 
-#one {
+.key#one {
   position: absolute;
   left: 0px;
   width: 100px;
@@ -90,7 +100,7 @@ button {
   border: 2px solid black;
   background-color: white;
 }
-#two{
+.key#two{
   position: absolute;
   left: 100px;
   width: 100px;
@@ -98,7 +108,7 @@ button {
   border: 2px solid black;
   background-color: white;
 }
-#three {
+.key#three {
   position: absolute;
   left: 200px;
   width: 100px;
@@ -106,7 +116,7 @@ button {
   border: 2px solid black;
   background-color: white;
 }
-#four {
+.key#four {
   position: absolute;
   left: 300px;
   width: 100px;
@@ -114,7 +124,7 @@ button {
   border: 2px solid black;
   background-color: white;
 }
-#five {
+.key#five {
   position: absolute;
   left: 400px;
   width: 100px;
@@ -122,7 +132,7 @@ button {
   border: 2px solid black;
   background-color: white;
 }
-#six {
+.key#six {
   position: absolute;
   left: 500px;
   width: 100px;
@@ -130,7 +140,7 @@ button {
   border: 2px solid black;
   background-color: white;
 }
-#seven {
+.key#seven {
   position: absolute;
   left: 600px;
   width: 100px;
@@ -143,7 +153,7 @@ button {
   position: absolute;
   left: 60px;
   width: 55px;
-  height: 200px;
+  height: 182px;
   border: 1px solid black;
   background-color: black;
   z-index: 10;
@@ -153,7 +163,7 @@ button {
   position: absolute;
   left: 160px;
   width: 55px;
-  height: 200px;
+  height: 182px;
   border: 1px solid black;
   background-color: black;
   z-index: 10;
@@ -164,7 +174,7 @@ button {
   position: absolute;
   left: 360px;
   width: 55px;
-  height: 200px;
+  height: 182px;
   border: 1px solid black;
   background-color: black;
   z-index: 10;
@@ -174,7 +184,7 @@ button {
   position: absolute;
   left: 472px;
   width: 55px;
-  height: 200px;
+  height: 182px;
   border: 1px solid black;
   background-color: black;
   z-index: 10;
@@ -184,11 +194,32 @@ button {
   position: absolute;
   right: 60px;
   width: 55px;
-  height: 200px;
+  height: 182px;
   border: 1px solid black;
   background-color: black;
   z-index: 10;
   box-shadow: 2px 2px 1px #888888;
+}
+
+.key {
+  transition: all .07s ease;
+}
+
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  background-color: #ccf2ff;
+}
+
+kbd {
+  display: block;
+  position: absolute;
+  color: black;
+  font-size: 37px;
+  z-index: 120;
+  bottom: -3px;
+  right: 40px;
 }
 
 /*.play-bar {

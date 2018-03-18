@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/keyversion.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+
+  <div class="container">
+    <h1>Korean Drama Music Player 🎶 </h1>
+    <div class="keyboard">
+
+      <div data-key="65" class="key" id="one">
+        <kbd>A</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="83" class="key" id="two">
+        <kbd>S</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="68" class="key" id="three">
+        <kbd>D</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="70" class="key" id="four">
+        <kbd>F</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="71" class="key" id="five">
+        <kbd>G</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="72" class="key" id="six">
+        <kbd>H</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="74" class="key" id="seven">
+        <kbd>J</kbd>
+        <span class="sound"></span>
+      </div>
+
+      <div class="flatKeys" id="eight"></div>
+      <div class="flatKeys" id="nine"></div>
+      <div class="flatKeys" id="ten"></div>
+      <div class="flatKeys" id="eleven"></div>
+      <div class="flatKeys" id="twelve"></div>
+
+    </div>
+
+    <button type="stop" class='stop'>Stop</button>
+    <button type="restart" class='restart'>Restart</button>
+    <div class="trackName"></div>
+    <div class="pedal"></div>
+    <div class="pedal2"></div>
+    <!-- <div class="timer"></div> -->
+    <div class="pedal3"></div>
+     <span id="time">0:00</span>
+     <span id="total-time">0:00</span>
+   </div>
+
+  <audio data-key="65" src="audio/Fool.m4a" type="audio/m4a"></audio>
+  <audio data-key="83" src="audio/If-Only.m4a"></audio>
+  <audio data-key="68" src="audio/You-Are-My-World.m4a"></audio>
+  <audio data-key="70" src="audio/WindFlower.m4a"></audio>
+  <audio data-key="71" src="audio/Somewhere-Someday.m4a"></audio>
+  <audio data-key="72" src="audio/My-Destiny.m4a"></audio>
+  <audio data-key="74" src="audio/Every-Moment-of-You.m4a"></audio>
+
+  </body>
+</html>
+
+<!-- The play bar -->
+   <!-- < <div class="play-bar">
+    <span id="time">0:00</span>
+    <div class="bar-bg">
+    <span id="total-time">0:00</span>
+     <div class="progress"></div>
+    </div>
+
+  </div> -->
