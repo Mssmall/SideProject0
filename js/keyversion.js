@@ -1,15 +1,4 @@
-
-// .play() .pause()
-// restart = .currentTime
-// length of audio file = .duration
-// timeupdate to update current time whenever audio .currentTime changes
-
 $(document).ready(function () {
-
-    // $('#one').css('background-color', '#ccf2ff');
-
-
-
 
   const playSound = function(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -17,7 +6,7 @@ $(document).ready(function () {
     if (!audio) return; // stop function from running if there is no keydown match with audio datakey in code
     audio.currentTime = 0; //rewind to start
     audio.play();
-    const file = document.querySelector(`audio[data-key="${e.keyCode}"]`).src;
+    const file = document.querySelector(`audio[data-key="${e.keyCode}"]`).src; // getting src
     const track = file.split('/').pop().split('.').shift().split('-'); //obtains just the track name from src
     $('.trackName').html( track ); //displays track name in browser
     key.classList.add('playing'); // JQuery: key.addClass('playing')
@@ -31,9 +20,6 @@ $(document).ready(function () {
   const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
-
-
-
 
 //////// stops two songs from playing at same time
     document.addEventListener('play', function(e){
@@ -72,3 +58,12 @@ $(document).ready(function () {
   };
 
 });
+
+////// STOP FUNCTION
+// $('.stop').keyup(function() {
+//   const audio = $('audio');
+//   for (let i = 0; i < audio.length; i++) {
+//     let oldSrc = audio.src;
+//     audio[i].src = "";
+//   };
+// })
